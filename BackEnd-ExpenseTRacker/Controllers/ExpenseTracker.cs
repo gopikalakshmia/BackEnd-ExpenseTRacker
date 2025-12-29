@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BackEnd_ExpenseTRacker.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class ExpenseTracker : ControllerBase
     {
         private readonly ExpenseDbContext _context;
