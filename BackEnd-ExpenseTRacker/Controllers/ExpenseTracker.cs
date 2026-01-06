@@ -26,7 +26,7 @@ namespace BackEnd_ExpenseTRacker.Controllers
             {
                 _context.Expenses.Add(newexpense);
                 _context.SaveChanges();
-                return Ok();
+                return Ok(newexpense);
 
             }
             else
